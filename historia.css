@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.titulo {
+    text-align: center;
+    color: white;
+}
+
+header{
+    background-color: rgb(69, 104, 39);
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(69, 104, 39);
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .flex-container {
+    display: flex;
+  }
+
+  .texto {
+    text-align: left;
+    color: black;
+}
+ 
+  
