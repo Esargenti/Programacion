@@ -3,47 +3,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-.titulo {
-    text-align: center;
-    color: white;
-}
-
-
-.topnav {
-    overflow: hidden;
-    background-color: rgb(69, 104, 39);
-  }
-  
-  .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
+ 
 body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://argentinegolf.com/contents/golfcourses/photos/main/1408802174_buenos-aires-gc.jpg");
-    height: 95%;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,8 +20,8 @@ body, html {
   }
   
   .hero-image1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://argentinegolf.com/contents/golfcourses/photos/main/1408802174_buenos-aires-gc.jpg");
-    height: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/historia4.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,8 +29,8 @@ body, html {
   }
   
   .hero-image2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://argentinegolf.com/contents/golfcourses/photos/main/1408802174_buenos-aires-gc.jpg");
-    height: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/canchas");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -69,16 +38,16 @@ body, html {
   }
 
   .hero-image3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://argentinegolf.com/contents/golfcourses/photos/main/1408802174_buenos-aires-gc.jpg");
-    height: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/torneos.webp");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
   .hero-image4 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://argentinegolf.com/contents/golfcourses/photos/main/1408802174_buenos-aires-gc.jpg");
-    height: 60%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/conocer.webp");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

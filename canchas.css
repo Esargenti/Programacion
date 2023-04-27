@@ -8,6 +8,8 @@
 .titulo {
     text-align: center;
     color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 26px;
 }
 
 header{
@@ -37,7 +39,25 @@ header{
     background-color: #04AA6D;
     color: white;
   }
-
-  .flex-container {
+main{
+  margin-left: 5px;
+}
+.flex-container {
     display: flex;
   }
+.texto{
+  text-align: left;
+  text-align:justify ;
+  margin-right: 20px;
+}
+
+.imagen{
+  margin-left: 10px;
+}
+.itemsLista{
+  list-style-type: decimal;
+  display: list-item;
+  margin-left: 25px;
+}
+
+

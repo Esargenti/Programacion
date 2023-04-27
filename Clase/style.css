@@ -17,3 +17,10 @@ body{background-color: yellow;}
 .p2{
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*A partir de los 480px aplicar cambio de pantalla*/
+@media screen and (mid-width: 480){
+    body{
+        background-color: lightgreen
+        }
+    }
