@@ -1,68 +1,76 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container{
-  width: 100vw;
-  height: 100vh;
-  font-family:'Times New Roman', Times, serif;
-  font-size: 20 px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 90px 1fr 1fr 100px ;
-  gap: 10px;
+*{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-
 }
 
-.container div{
-  padding: 6px;
-  border: 1px 
-}
-
-.header{
-  grid-column-start: 1;
-  grid-column-end: 4;
-  background-color: rgb(69, 104, 39);
-  text-align: center;
+.nav-link {
   color: white;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 26px;
-
-}
-.content-large{
-  grid-row-start: 2;
-  grid-row-end: 4;  
-  grid-column-start:1 ;
-  grid-column-end:4 ;
+  font-family: serif;
+  font-size: large;
 }
 
-.footer{
-  grid-column-start: 1;
-  grid-column-end: span 3;
+.titulo{
+  text-align: center;
+  text-transform: uppercase;
+  font-family:serif;
 }
-  
-  .topnav a {
-    float: right;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
 
+.subtitulo{
+  margin: 5px;
+  font-family: serif;
+}
+
+.historia p{
+  text-align: justify;
+  margin: 5px;
+  justify-content: center;
+}
+.container{
+  max-width: 1400px;
+  margin: auto;
+}
+
+.torneos{
+  background-color: rgb(57, 124, 57);
+  color: white;
+  text-align: center;
+}
+
+.torneos .container{
+  padding: 100px 12px;
+}
+
+.torneos h2{
+  margin-top: 0;
+}
+
+.torneos p{
+  display: none;
+}
+
+.torneos .carta{
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.carta:first-child{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");
+}
+
+.carta:nth-child(2){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");   
+}
 
 

@@ -5,26 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Torneos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="torneo.css">
+
 </head>
 <body>
-    <header>
-        <div class="container-header">
-            <h1> EL GOLF EN ARGENTINA</h1>
-            <div class="topnav">
-                <a href="/TORNEOS.html">TORNEOS</a>
-                <a href="/CANCHAS.html">CANCHAS</a>
-                <a href="/HISTORIA.html">HISTORIA</a>
-                <a href="/index.html">INICIO</a>   
+    <nav class="navbar navbar-expand-lg" style="background-color: #155d27;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="font-family: serif;">Golf Argentino</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="HISTORIA.html">Historia</a>
+              <a class="nav-link" href="CANCHAS.html">Canchas</a>
+              <a class="nav-link" href="TORNEOS.html">Torneos</a>
             </div>
+          </div>
         </div>
-    </header>
-    <div class="container">
-        <div class="content-large">
-            <h2>Torneos de Golf</h2>
-            <br>
-            <h3> Los torneos más importantes en la historia del golf</h3>
-            <br>
+    </nav>
+    <main>
+        <br>
+        <h2 class="titulo">Torneos de Golf</h2>
+        <h4 class="subtitulo">Los torneos más importantes en la historia del golf</h4>
+        <div class="historia">
             <p>
                 El mundo del golf tiene cuatro campeonatos principales o mayores que son conocidos como <b>"Major"</b>. 
                 Originalmente, los torneos grandes eran el Abierto Británico, el British Amateur, el Abierto de Estados Unidos y el US Amateur. 
@@ -32,16 +38,32 @@
                 El major de más antigüedad, el Abierto británico, es el único que tiene lugar fuera de Estados Unidos. El Masters es el único de los cuatro torneos que se juega cada año en el mismo campo, el Augusta National Golf Club.
             </p>
         </div>
-        <div class="footer">
+        <br>
+        <div class="torneos">
+            <div class="container">
+                <h2>Torneos</h2>
+                <div class="nombres">
+                    <div class="carta">
+                        <h3>torneo1</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa itaque. Eius sequi, reiciendis dolorem inventore aut saepe minus animi. Exercitationem sapiente quasi obcaecati iusto laboriosam fugiat ea error consequuntur!</p>
+                    </div>
+                    <div class="carta">
+                        <h3>torneo2</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa itaque. Eius sequi, reiciendis dolorem inventore aut saepe minus animi. Exercitationem sapiente quasi obcaecati iusto laboriosam fugiat ea error consequuntur!</p>
+                    </div>
+                    <div class="carta">
+                        <h3>torneo3</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa itaque. Eius sequi, reiciendis dolorem inventore aut saepe minus animi. Exercitationem sapiente quasi obcaecati iusto laboriosam fugiat ea error consequuntur!</p>
+                    </div>
+                    <div class="carta">
+                        <h3>torneo4</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, culpa itaque. Eius sequi, reiciendis dolorem inventore aut saepe minus animi. Exercitationem sapiente quasi obcaecati iusto laboriosam fugiat ea error consequuntur!</p>
+                </div>
+            </div>
 
+            </div>
         </div>
-    </div>
-
-
-
-    
-
-
-    
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
