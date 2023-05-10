@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+#accordionFlushExample {
+  margin-left: 5%;
+  margin-right: 5%;
+  border-style:double;
+  border-color:black;
+}
 
 .nav-link {
   color: white;
@@ -27,19 +33,28 @@
   margin: 5px;
   text-align: justify;
   font-family: serif;
+  font-size: large;
 }
 
 .cancha{
   display: flex;
   flex-direction: row;
   font-family: serif;
-  font-size: medium;
+  font-size: large;
 }
 
 .cancha img{
-  width: 15%;
+  width: 12%;
   height: auto;
-  
+}
+
+.accordion-button{
+  font-family: serif;
+}
+
+.accordion-body{
+  font-family: serif;
+  text-align: justify;
 }
 
 @media screen and (max-width: 500px){

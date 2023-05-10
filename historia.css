@@ -8,6 +8,7 @@
   color: white;
   font-family: serif;
   font-size: large;
+  justify-content: end;
 }
 
 .titulo{
@@ -15,7 +16,6 @@
   text-transform: uppercase;
   font-family:serif;
   font-size: xx-large;
-  
   }
 
 .subtitulo{
@@ -34,17 +34,21 @@
 .flex-container img{
   width: 40%;
   height: auto;
+  border-radius: 8px;
 }
 
 .texto p{
   text-align: justify;
   margin: 5px;
-  font-family:serif
-  
+  font-family:serif;
+  font-size: large;
   }
 .texto img{
-  width: 45%;
-  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 8px;
 }
 
 @media screen and (max-width: 500px){
