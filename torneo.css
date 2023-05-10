@@ -19,6 +19,7 @@
 .subtitulo{
   margin: 5px;
   font-family: serif;
+  text-decoration: underline;
 }
 
 .historia p{
@@ -26,51 +27,101 @@
   margin: 5px;
   justify-content: center;
 }
-.container{
-  max-width: 1400px;
-  margin: auto;
-}
 
-.torneos{
-  background-color: rgb(57, 124, 57);
+#nombre_torneos{
+  background-color: #155d27;
   color: white;
   text-align: center;
 }
 
-.torneos .container{
-  padding: 100px 12px;
-}
-
-.torneos h2{
-  margin-top: 0;
-}
-
-.torneos p{
-  display: none;
-}
-
-.torneos .carta{
+#nombre_torneos .carta{
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
-  margin: 20px;
+  margin:20px;
+  border-color: black;
   border-radius: 15px;
+  width: 100%;
+  flex-grow: 0;
+  
+}
+
+#nombre_torneos .torneos{
+  display: flex;
+  justify-content: center;
+}
+
+#nombre_torneos p{
+  display: block;
+  margin-top:80px;
+  margin-bottom: 30px;
+  font-family: serif;
+}
+
+#nombre_torneos h3{
+  margin-top: 0;
+  font-family: serif;
+}
+
+#nombre_torneos h2{
+  font-size: 2em;
+  font-family: serif;
+  margin-top: 10px;
+}
+
+#nombre_torneos .carta{
+ padding: 50px;
+ margin-bottom: 30px;
+ background-size: 100% 150px;
+ background-position-y:0 ;
+ background-color: rgb(50,50,50,0.5);
+ box-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
 }
 
 .carta:first-child{
-  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("media/augusta.jpg");
 }
 
 .carta:nth-child(2){
-  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");
+  background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("media/USOPEN.png");
 }
 
-.carta:nth-child(2){
-  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");
+.carta:nth-child(3){
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("media/abritanico.png");
 }
 
-.carta:nth-child(2){
-  background-image: linear-gradient(0deg, rgba(0,0,0,0,5), rgba(0,0,0,0,5)), url("");   
+.carta:nth-child(4){
+  background-image:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("media/pga-tour-logo.jpg");
 }
 
 
+@media screen and (max-width: 500px){
+  
+  #nombre_torneos .container{
+    padding: 150px 0px;
+    margin: 0;
+  }
+   
+  #nombre_torneos h2{
+    margin-top: 0;
+  }
+   #nombre_torneos p{
+     display: none;
+   }
+
+   .historia{
+    justify-content: center;
+   }
+
+   #nombre_torneos .carta{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+   #nombre_torneos .torneos{
+    flex-direction: column;
+  }
+   
+}

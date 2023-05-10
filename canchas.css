@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.segunda_parte{
+  background-color:#155d27 ;
+}
+
 #accordionFlushExample {
   margin-left: 5%;
   margin-right: 5%;
@@ -24,7 +28,8 @@
 }
 
 .subtitulo{
-  margin: 5px;
+  margin: 10px;
+  
   font-family: serif;
   text-decoration: underline;
 }
@@ -61,6 +66,7 @@
   .subtitulo{
     text-align: center; 
   }
+
   .cancha{
     flex-wrap: wrap;
     flex-basis: 100%;
