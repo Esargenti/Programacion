@@ -51,6 +51,25 @@
   border-radius: 8px;
 }
 
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #155d27;
+  height: auto;
+  padding-top: 40px;
+  width: 100vw;
+}
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 @media screen and (max-width: 500px){
   .subtitulo{
     text-align: center; 

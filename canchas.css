@@ -58,9 +58,23 @@
 }
 
 .accordion-body{
+  display: flex;
+  align-items:center;
+  justify-content:flex-start;
+  flex-direction: row;
+}
+
+.accordion-body p{
   font-family: serif;
+  padding-right: 10px;
   text-align: justify;
 }
+.accordion-body img{
+  width: 35%;
+  height: 10%;
+  border-radius: 15px;
+}
+
 
 @media screen and (max-width: 500px){
   .subtitulo{
