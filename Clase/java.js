@@ -61,3 +61,13 @@ saludar("Emilia")
 function  saludar_con_parametros(nombre){
     return ("Hola"+ nombre)
 }
+
+// while
+while(a>1){
+    console.log(2); console.log(b)
+}
+
+//for
+for(let x=0; x<10; x++){
+    console.log(x)
+}
