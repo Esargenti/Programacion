@@ -28,13 +28,39 @@
   justify-content: center;
 }
 
+.container_c {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container_c h1 {
+  font-family: serif;
+  font-size:40px;
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+}
+
+.container_c li {
+  display: inline-block;
+  font-family: serif;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.container_c li span {
+  display: block;
+  font-size: 3.5rem;
+}
+
 #nombre_torneos{
   background-color: #155d27;
   color: white;
   text-align: center;
   
 }
-
 
 #nombre_torneos .carta{
   background-position: center center;
@@ -121,6 +147,8 @@
 
 .footer-basic ul a {
   color:inherit;
+  font-family: serif;
+  font-size: large;
   text-decoration:none;
   opacity:0.8;
 }
@@ -146,6 +174,18 @@
     text-align: center; 
   }
   
+  .container_c h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  .container_c li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+  .container_c li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+
   #nombre_torneos .container{
     padding: 150px 0px;
   }

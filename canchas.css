@@ -52,8 +52,14 @@
   height: auto;
 }
 
+
+
 .accordion-button{
   font-family: serif;
+}
+
+.accordion-flush{
+  padding-bottom: 10px;
 }
 
 .accordion-collapse{
@@ -107,6 +113,8 @@
 
 .footer-basic ul a {
   color:inherit;
+  font-family: serif;
+  font-size: large;
   text-decoration:none;
   opacity:0.8;
 }
@@ -148,6 +156,7 @@
     text-align: center;
     left: 30%;
   }
+
   .accordion-collapse{
     flex-direction: column;  
   }
