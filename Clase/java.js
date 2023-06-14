@@ -71,3 +71,19 @@ while(a>1){
 for(let x=0; x<10; x++){
     console.log(x)
 }
+
+//1. Tomar un valor que ingresa el usuario
+// crear variable
+let edad=0
+
+//asginarle a la variable un valor que ingrese el usuario
+edad=document.getElementById("age").value
+
+//2. Almacenarlo en la computadora
+
+localStorage.setItem("edad_usuario",edad);
+localStorage.getItem("edad_usuario")
+//borrar todo lo que tengo
+localStorage.clear()
+//borrar uno solo de los datos
+localStorage.removeItem("edad_usuario")

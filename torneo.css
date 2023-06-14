@@ -6,7 +6,7 @@
 
 .nav-link {
   color: white;
-  font-family: serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: large;
 }
 
@@ -24,8 +24,10 @@
 
 .historia p{
   text-align: justify;
+  font-family: serif;
   margin: 5px;
   justify-content: center;
+  font-size: large;
 }
 
 .container_c {
@@ -39,6 +41,7 @@
   font-size:40px;
   letter-spacing: .125rem;
   text-transform: uppercase;
+  padding-top: 20px;
 }
 
 .container_c li {
@@ -54,6 +57,119 @@
   display: block;
   font-size: 3.5rem;
 }
+
+.calendario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.wrapper{
+  width: 450px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding:  25px 30px 10px;
+  justify-content: space-between;
+}
+
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+header .icons{
+  display: flex;
+}
+
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+
+header .icons span:hover{
+  background:#f2f2f2;
+}
+
+header .icons span:last-child{
+  margin-right: -10px;
+}
+
+.calendar{
+  padding: 20px;
+}
+
+.calendar ul{
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendar .dia{
+  margin-bottom: 20px;
+}
+
+.calendar .semana li{
+  font-weight: 500;
+  cursor: default;
+}
+
+.calendar .dia li{
+  cursor: pointer;
+  margin-top: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+.dia li.inactive{
+  color: #aaa;
+}
+
+.dia li.active{
+  color: #fff;
+}
+
+.calendar ul li{
+  width: calc(100% /7);
+}
+
+.dia li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dia li.active::before{
+  background: #9B59B6;
+}
+.dia li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
 
 #nombre_torneos{
   background-color: #155d27;
@@ -99,6 +215,7 @@
   margin-top: 10px;
 }
 
+
 #nombre_torneos .carta{
  padding: 50px;
  margin-bottom: 30px;
@@ -107,6 +224,7 @@
  background-color: rgb(50,50,50,0.5);
  box-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
 }
+
 
 
 .carta:first-child{
@@ -147,7 +265,7 @@
 
 .footer-basic ul a {
   color:inherit;
-  font-family: serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: large;
   text-decoration:none;
   opacity:0.8;
