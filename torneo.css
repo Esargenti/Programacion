@@ -296,6 +296,21 @@ header .icons span:last-child{
   .subtitulo{
     text-align: center; 
   }
+
+  .wrapper header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  header .current-date {
+    margin-bottom: 10px;
+  }
+
+  header .icons span {
+    margin: 5px 2px;
+  }
   
   .container_c h1 {
     font-size: calc(1.5rem * var(--smaller));
@@ -308,6 +323,8 @@ header .icons span:last-child{
   .container_c li span {
     font-size: calc(3.375rem * var(--smaller));
   }
+
+
 
   #nombre_torneos .container{
     padding: 150px 0px;

@@ -41,6 +41,9 @@ let date = new Date(),
 currYear = date.getFullYear(),
 currMonth = date.getMonth();
 
+const activeDates = [20, 21, 22, 23];
+let activeMonth = 6;
+let activeYear = 2023
 
 // storing full name of all months in array
 const months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
@@ -61,7 +64,9 @@ const renderCalendar = () =>{
 
   //creo la lista de los dias del mes
   for (let i = 1; i <= lastDateofMonth; i++) {  
-    liTag+=`<li>${i}</li>`;
+    let isActiveDay = activeDates.includes(i);
+    let isToday = activeDates.includes(i) && currMonth === activeMonth && currYear === activeYear ? "active" : "";
+    liTag += `<li class="${isToday}">${i}</li>`;
   }
 
   //creo la lista de los primeros dias del próximo mes
