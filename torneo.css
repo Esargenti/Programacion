@@ -6,25 +6,25 @@
 
 .nav-link {
   color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: large;
 }
 
 .titulo{
   text-align: center;
   text-transform: uppercase;
-  font-family:serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .subtitulo{
   margin: 5px;
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-decoration: underline;
 }
 
 .historia p{
   text-align: justify;
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 5px;
   justify-content: center;
   font-size: large;
@@ -80,9 +80,12 @@
   height: 90px;
 }
 
-header .current-date{
-  font-size: 1.45rem;
-  font-weight: 500;
+.current-date{
+  font-family: serif;
+  margin: 5px;
+  font-size:x-large;
+  text-align: justify;
+  justify-content: baseline;
 }
 
 header .icons{
@@ -122,6 +125,7 @@ header .icons span:last-child{
   color: #333;
   width: calc(100% / 7);
   font-size: 1.07rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .calendar .dia{
@@ -201,13 +205,6 @@ header .icons span:last-child{
   justify-content: center;
 }
 
-#nombre_torneos p{
-  display: block;
-  margin-top:80px;
-  margin-bottom: 30px;
-  font-family: serif;
-}
-
 #nombre_torneos h3{
   margin-top: 0;
   margin-bottom: 20px;
@@ -230,6 +227,12 @@ header .icons span:last-child{
  box-shadow: 2px 2px 10px rgba(0,0,0,0.5); 
 }
 
+.carta p{
+  display: block;
+  margin-top:80px;
+  margin-bottom: 30px;
+  font-family: serif;
+}
 
 
 .carta:first-child{
@@ -296,21 +299,6 @@ header .icons span:last-child{
   .subtitulo{
     text-align: center; 
   }
-
-  .wrapper header {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    padding: 10px;
-  }
-
-  header .current-date {
-    margin-bottom: 10px;
-  }
-
-  header .icons span {
-    margin: 5px 2px;
-  }
   
   .container_c h1 {
     font-size: calc(1.5rem * var(--smaller));
@@ -325,7 +313,6 @@ header .icons span:last-child{
   }
 
 
-
   #nombre_torneos .container{
     padding: 150px 0px;
   }
@@ -333,7 +320,7 @@ header .icons span:last-child{
   #nombre_torneos h2{
     margin-top: 0;
   }
-   #nombre_torneos p{
+   .carta p{
      display: none;
    }
 
