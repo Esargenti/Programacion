@@ -37,7 +37,7 @@
 }
 
 .container_c h1 {
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size:40px;
   letter-spacing: .125rem;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
 
 .container_c li {
   display: inline-block;
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.5em;
   list-style-type: none;
   padding: 1em;
@@ -81,7 +81,7 @@
 }
 
 .current-date{
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin: 5px;
   font-size:x-large;
   text-align: justify;
@@ -208,12 +208,12 @@ header .icons span:last-child{
 #nombre_torneos h3{
   margin-top: 0;
   margin-bottom: 20px;
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #nombre_torneos h2{
   font-size: 2em;
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   margin-top: 10px;
 }
 
@@ -231,7 +231,7 @@ header .icons span:last-child{
   display: block;
   margin-top:80px;
   margin-bottom: 30px;
-  font-family: serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -254,7 +254,7 @@ header .icons span:last-child{
 .footer-basic {
   padding:10px 0;
   background-color:white;
-  color:155d27;
+  color:#155d27;
   padding-top: 20px;
 }
 
