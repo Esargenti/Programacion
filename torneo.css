@@ -25,7 +25,7 @@
 .historia p{
   text-align: justify;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin: 5px;
+  margin: 10px;
   justify-content: center;
   font-size: large;
 }
@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 35vh;
+  min-height: 30vh;
 }
 
 .wrapper{
@@ -177,7 +177,7 @@ header .icons span:last-child{
 }
 
 .container{
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 #nombre_torneos{
@@ -299,22 +299,26 @@ header .icons span:last-child{
   .subtitulo{
     text-align: center; 
   }
+
+  .historia p{
+    margin: 10px;
+  }
   
   .container_c h1 {
-    font-size: calc(1.5rem * var(--smaller));
+    margin-top: 30px;
+    font-size: 35px;
   }
 
   .container_c li {
-    font-size: calc(1.125rem * var(--smaller));
+    font-size: 30px;
   }
   
   .container_c li span {
-    font-size: calc(3.375rem * var(--smaller));
+    font-size: 30px;
   }
 
-
   #nombre_torneos .container{
-    padding: 150px 0px;
+    padding: 90px 0px;
   }
    
   #nombre_torneos h2{
@@ -343,5 +347,12 @@ header .icons span:last-child{
    #nombre_torneos .torneos{
     flex-direction: column;
   }
-   
+  
+  .footer-basic ul{
+    font-size: 30px;
+  }
+
+  .footer-basic .copyright{
+    font-size: 20px;
+  }
 }
