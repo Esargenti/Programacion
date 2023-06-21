@@ -65,13 +65,12 @@
           <button type="submit" class="btn btn-secondary">Consultá</button>
           <p class="warnings" id="warnings"></p>
         </form> 
-
-          <div class="popup">
-            <h2>Tu handicap es:</h2>
-            <p>Muchas gracias por consultar</p>
-            <button type="button" class="btn btn-secondary">OK</button>
-          </div>
+        <div id="popup" class="popup">
+          <h2>Tu handicap es</h2>
+          <p id="handicap_n" class="handicap_n"></p>
+          <button type="button" href="#" onclick="esconder('popup')">OK</button>
         </div>
+
       </section>
     </main>
 
@@ -90,5 +89,5 @@
     </footer>
   </div>
 </body>
-<script src="handicap.js"></script>
+<script src="handicap_2.js"></script>
 </html>
