@@ -55,6 +55,7 @@
 form .h2{
   text-align: center;
   font-weight: 700;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 form{
@@ -136,6 +137,7 @@ form .btn:hover {
   padding: 10px 10px 10px;
   z-index: 20;
   text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #popup:after{
