@@ -127,7 +127,6 @@ form .btn:hover {
 }
 
 .popup{
-  display: none;
   position: relative;
   text-align: center;
   width: 40%;

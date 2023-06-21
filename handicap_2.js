@@ -1,55 +1,53 @@
-// Obtener referencias a los elementos del DOM
 const form = document.getElementById('form');
-const submitButton = document.querySelector('button[type="submit"]');
-const closeButton = document.querySelector('.popup button');
+const enviar = document.querySelector('button[type="submit"]');
+const cerrar = document.querySelector('.popup button');
 const popup = document.getElementById('popup');
-const apellidoInput = document.getElementById('apellido');
-const matriculaInput = document.getElementById('matricula');
+const apellido = document.getElementById('apellido');
+const matricula = document.getElementById('matricula');
 const warnings = document.getElementById('warnings');
 const handicapN = document.getElementById('handicap_n');
 
-// Ocultar el popup inicialmente
+// Desaparece el popup al inicio
 popup.style.display = 'none';
 
-// Función para mostrar el formulario y ocultar el popup
+// Muestro el formulario y oculto el popup
 function mostrarFormulario() {
-  // Restablecer los campos de entrada a su estado inicial
-  apellidoInput.value = '';
-  matriculaInput.value = '';
+  // Cada vez que vuelvo al formulario, los campos vuelven a 0
+  apellido.value = '';
+  matricula.value = '';
 
   form.style.display = 'block';
   popup.style.display = 'none';
 }
 
-// Función para mostrar el popup y ocultar el formulario
+//Cierro el formulario y abre el popup
 function mostrarPopup() {
   form.style.display = 'none';
   popup.style.display = 'block';
 }
 
-// Función para validar el formulario y mostrar los warnings correspondientes
+// Valido el formulario
 function validarFormulario(event) {
-  event.preventDefault(); // Evitar que se envíe el formulario por defecto
+  event.preventDefault(); 
+  const apellido_c = apellido.value.trim();
+  const matricula_c = matricula.value.trim();
+  let warning_m = '';
 
-  const apellido = apellidoInput.value.trim();
-  const matricula = matriculaInput.value.trim();
-  let warningMessage = '';
-
-  // Validar el apellido
-  if (apellido.length < 3) {
-    warningMessage += 'El apellido debe tener al menos 3 letras. ';
+  // Valido el apellido
+  if (apellido_c.length < 3) {
+    warning_m += 'El apellido debe tener al menos 3 letras. ';
   }
 
-  // Validar la matricula
-  if (matricula.length !== 5 || isNaN(matricula)) {
-    warningMessage += 'La matrícula debe tener 5 números. ';
+  // Valido la matricula
+  if (matricula_c.length !== 5 || isNaN(matricula_c)) {
+    warning_m += 'La matrícula debe tener 5 números. ';
   }
 
-  // Mostrar los warnings correspondientes
-  warnings.textContent = warningMessage;
+  // Si hay error, muestro que falta
+  warnings.textContent = warning_m;
 
-  // Mostrar el popup o el formulario según la validación
-  if (warningMessage === '') {
+  // Muestro el popup o el formulario a partir de la validación
+  if (warning_m === '') {
     mostrarPopup();
     generarHandicap();
   } else {
@@ -57,15 +55,14 @@ function validarFormulario(event) {
   }
 }
 
-// Asociar eventos a los botones
-submitButton.addEventListener('click', validarFormulario);
-closeButton.addEventListener('click', mostrarFormulario);
+enviar.addEventListener('click', validarFormulario);
+cerrar.addEventListener('click', mostrarFormulario);
 
-// Función para generar un handicap aleatorio entre 0 y 30
+// Genero el handicap random entre 0 y 30
 function generarHandicap() {
   const randomHandicap = Math.floor(Math.random() * 31);
   handicapN.textContent = randomHandicap;
 }
 
-// Inicializar el formulario mostrando el formulario y ocultando el popup
+// Vuelvo al formulario y oculto el popup
 mostrarFormulario();
