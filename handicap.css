@@ -44,7 +44,7 @@
   position: relative;
   text-align: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  height: 60vh;
+  height: 70vh;
   width: 100%;
   overflow: hidden;
   display: flex;
@@ -61,7 +61,7 @@ form .h2{
 form{
   background-color: #fff;
   padding: 20px 0;
-  width: 40%;
+  width: 35%;
   box-shadow: 0 0 6px 0 rgba(225, 225, 225, 0.8);
   border-radius: 10px;
 }
