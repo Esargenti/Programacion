@@ -261,6 +261,10 @@ form .btn:hover {
     form{
       width: 70%;
   }
+  .popup{
+    width: 70%;
+    height: 50%;
+  }
 
     .footer-basic ul{
       font-size: 30px;
